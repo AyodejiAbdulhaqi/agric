@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AgriShop</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Fresh Agricultural Products Delivered</h1>
+            <p>Buy fresh produce directly from farmers at the best prices.</p>
+        </section>
+
+        <section id="shop" class="shop-section">
+            <h2>Our Products</h2>
+            <div class="carousel-container">
+                <button class="prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x150" alt="Product 1">
+                        <h3>Fresh Tomatoes</h3>
+                        <p>$3.99</p>
+                        <button class="buy-now" onclick="addToCart('Fresh Tomatoes', 3.99)">Buy Now</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x150" alt="Product 2">
+                        <h3>Green Lettuce</h3>
+                        <p>$2.49</p>
+                        <button class="buy-now" onclick="addToCart('Green Lettuce', 2.49)">Buy Now</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x150" alt="Product 3">
+                        <h3>Organic Carrots</h3>
+                        <p>$4.50</p>
+                        <button class="buy-now" onclick="addToCart('Organic Carrots', 4.50)">Buy Now</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x150" alt="Product 4">
+                        <h3>Fresh Spinach</h3>
+                        <p>$3.25</p>
+                        <button class="buy-now" onclick="addToCart('Fresh Spinach', 3.25)">Buy Now</button>
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AgriShop. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
